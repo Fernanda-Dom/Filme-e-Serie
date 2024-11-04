@@ -1,0 +1,81 @@
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    color: #f1c40f; /* Texto amarelo */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: #1c1c1c; /* Tom escuro para o cabeçalho */
+    color: #f1c40f; /* Amarelo para o texto */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    background: #f1c40f; /* Botão amarelo */
+    color: black; /* Texto preto no botão */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e0ac00; /* Tom mais escuro ao passar o mouse */
+}
+
+.chamada {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.chamada-texto {
+    flex: 1;
+    padding: 20px;
+}
+
+.video-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.categoria {
+    padding: 20px;
+}
+
+.categoria-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.categoria-videos a {
+    flex: 1 1 calc(25% - 10px);
+    position: relative;
+}
+
+.categoria-videos img {
+    width: 100%;
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    transition: transform 0.3s;
+}
+
+.categoria-videos img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1c1c1c; /* Tom escuro para o rodapé */
+    color: #f1c40f; /* Amarelo para o texto */
+}

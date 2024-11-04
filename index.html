@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Filmes e Séries</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Filmes e Séries</h1>
+        <button id="toggle-theme">Modo Escuro</button>
+    </header>
+
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h2>Batman</h2>
+            <p></p>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rD9BBEYTWP0?si=SOWHcO5686rJ4oMq"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="categoria">
+        <h2>Filmes Vingadores</h2>
+        <div class="categoria-videos">
+            <a href="https://www.youtube.com/watch?v=ygK7sAavO0c">
+                <img src="https://img.youtube.com/vi/ygK7sAavO0c/maxresdefault.jpg" alt="Batman" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=atkK6Kmqty8">
+                <img src="https://img.youtube.com/vi/atkK6Kmqty8/maxresdefault.jpg" alt="Batman" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=ICOmWEVuM1U">
+                <img src="https://img.youtube.com/vi/ICOmWEVuM1U/maxresdefault.jpg" alt="Batman" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=pUvnB4x8Qgs">
+                <img src="https://img.youtube.com/vi/pUvnB4x8Qgs/maxresdefault.jpg" alt="Batman" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=IwfUnkBfdZ4">
+                <img src="https://img.youtube.com/vi/IwfUnkBfdZ4/maxresdefault.jpg" alt="Batman" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=hebWYacbdvc">
+                <img src="https://img.youtube.com/vi/hebWYacbdvc/maxresdefault.jpg" alt="Batman" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=OPfxFUfg3lc">
+                <img src="https://img.youtube.com/vi/OPfxFUfg3lc/maxresdefault.jpg" alt="Batman" />
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Filmes e Séries. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-theme');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            toggleButton.textContent = body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Escuro';
+        });
+    </script>
+</body>
+
+</html>
